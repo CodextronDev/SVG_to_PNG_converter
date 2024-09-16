@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f6f9fc, #e9eff1);
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload-container {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #0056b3;
+}
+
+.fa-upload {
+    margin-right: 8px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.fa-cogs {
+    margin-right: 8px;
+}
+
+#preview-container {
+    margin-top: 20px;
+}
+
+#loading-text {
+    font-size: 18px;
+    color: #666;
+    display: none;
+}
+
+#preview {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: none;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    pointer-events: none; /* Disable by default */
+    opacity: 0.6; /* Indicate disabled state */
+}
+
+a.enabled {
+    pointer-events: auto; /* Enable when PNG is available */ 
+    opacity: 1; /* Remove disabled state indication */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fa-download {
+    margin-right: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    label,
+    button {
+        font-size: 14px;
+    }
+}

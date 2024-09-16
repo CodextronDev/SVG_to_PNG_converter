@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Author: Codextron -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG to PNG Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SVG to PNG Converter</h1>
+        <div class="file-upload-container">
+            <input type="file" id="upload" accept=".svg">
+            <label for="upload"><i class="fas fa-upload"></i>Choose File</label>
+        </div>
+        <button id="convert"><i class="fas fa-cogs"></i>Convert to PNG</button>
+        <div id="preview-container">
+            <p id="loading-text">Converting...</p>
+            <img src="#" alt="Preview" id="preview">
+        </div>
+        <a href="#" id="download" download="image.png"><i class="fas fa-download"></i>Download PNG</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
